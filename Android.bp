@@ -91,10 +91,25 @@ dex_import {
 }
 
 dex_import {
+	name: "mediatek-wfo-legacy",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/mediatek-wfo-legacy.jar"],
+}
+
+dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
 	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "dax-default",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/dolby/dax-default.xml",
+	filename_from_src: true,
+	sub_dir: "dolby",
+	soc_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -155,6 +170,15 @@ prebuilt_etc_xml {
 	name: "manifest_media_c2_V1_1_default",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_vendor.dolby.hardware.dms",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
