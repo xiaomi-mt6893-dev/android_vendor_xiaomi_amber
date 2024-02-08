@@ -381,6 +381,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_wifi_1a_1_hdr.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
+    vendor/xiaomi/amber/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
     vendor/xiaomi/amber/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/xiaomi/amber/proprietary/vendor/lib/AV1SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AV1SecureVdecCA.so \
