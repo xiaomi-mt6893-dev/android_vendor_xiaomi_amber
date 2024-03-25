@@ -41,7 +41,7 @@
  <Param name="MTK_AUDIO_TUNNELING_SUPPORT" value="" />
  <Param name="MTK_SMARTPA_DUMMY_LIB" value="" />
  <Param name="MTK_HIFIAUDIO_SUPPORT" value="yes" />
- <Param name="MTK_BESLOUDNESS_SUPPORT" value="" />
+ <Param name="MTK_BESLOUDNESS_SUPPORT" value="no" />
  <Param name="MTK_USB_PHONECALL" value="" />
  <Param name="MTK_AUDIO_NUMBER_OF_SPEAKER" value="2" />
  <Param name="MTK_A2DP_OFFLOAD_SUPPORT" value="yes" />
@@ -49,7 +49,7 @@
  <Param name="MTK_AUDIO_A2DP_LATENCY_IMPROVE" value="yes" />
  <Param name="MTK_BT_HEARING_AID_SUPPORT" value="yes" />
  <Param name="MTK_VOW_SUPPORT" value="yes" />
- <Param name="MTK_VOW_AMAZON_SUPPORT" value="yes" />
+ <Param name="MTK_VOW_AMAZON_SUPPORT" value="no" />
  <Param name="MTK_VOW_GVA_SUPPORT" value="yes" />
  <Param name="MTK_VOW_DUAL_MIC_SUPPORT" value="yes" />
  <Param name="MTK_VOW_MAX_PDK_NUMBER" value="0" />

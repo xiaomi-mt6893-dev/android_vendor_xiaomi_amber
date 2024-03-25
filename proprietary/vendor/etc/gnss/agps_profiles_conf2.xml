@@ -84,6 +84,17 @@
       tls="true"
   />
 
+  <cur_up_ssr_profile name="ssr_caict"
+      addr="supl.bd-caict.com"
+      port="7275"
+      tls="true"
+      supl_version="2"
+      supl_version_minor="0"
+      supl_version_ser_ind="4"
+      tls_version="1"
+      sha_version="0"
+  />
+
   <!-- GOOGLE-->
   <supl_profile name="GOOGLE"
       addr="supl.google.com"
@@ -128,7 +139,7 @@
 
   <!-- CMCC Lab -->
   <supl_profile name="CMCC Lab"
-      addr="supl.qxwz.com"
+      addr="218.206.176.50"
       port="7275"
       tls="true"
   />
@@ -184,7 +195,7 @@
 
   <!-- CMCC-->
   <supl_profile name="CMCC"
-      addr="supl.qxwz.com"
+      addr="221.176.0.55"
       port="7275"
       tls="true"
       app_id="ap0004"
@@ -198,6 +209,13 @@
   <!-- qxwz: China Public Server on Internet -->
   <supl_profile name="qxwz"
       addr="supl.qxwz.com"
+      port="7275"
+      tls="true"
+  />
+
+  <!-- caict: China Public Server on Internet -->
+  <supl_profile name="caict"
+      addr="supl.bd-caict.com"
       port="7275"
       tls="true"
   />
@@ -850,6 +868,10 @@
         enable/disable SUPL raw data dump to main log (logcat)
         available value: true, false (default)
 
+    tc10_supl_1_0_disable:
+        disable suplv1 if suplv1 not selected by framework (tc10 requirement)
+        available value: true, false(default)
+
     allow_ni_for_gps_off:
         From Android 10, GVC (GNSS Visibility Control) is introduced.
         And GVC is mandatory to get the GMS License.
@@ -988,6 +1010,9 @@
         enable/disable the MSB capability for galileo
         available value: true (default), false
 
+    customer_ca_path
+        now ca_enable=true by default, so customer may need install SUPL certification. Use this to
+        include customer's SUPL certification path.
   -->
   <up_setting
     ca_enable="true"
@@ -1026,6 +1051,7 @@
     tls_reuse_enable="false"
     imsi_cache_enable="false"
     supl_raw_data_enable="false"
+    tc10_supl_1_0_disable="false"
     allow_ni_for_gps_off="false"
     force_otdoa_assist_req="false"
     up_lppe_enable="true"
@@ -1050,6 +1076,7 @@
     beidou_msb_enable="true"
     galileo_msa_enable="true"
     galileo_msb_enable="true"
+    customer_ca_path="odm/etc/gnss/cacerts_supl/"
   />
 
   <!-- carrier_mapping
@@ -1179,11 +1206,6 @@
       v1="71610"
     />
   </carrier_mapping>
-  <carrier_mapping name="Claro_Colombia">
-    <mcc_mnc
-      v1="732101"
-    />
-  </carrier_mapping>
   <carrier_mapping name="Entel_Peru">
     <mcc_mnc
       v1="71617"
@@ -1203,11 +1225,16 @@
       v3="46005"
     />
   </carrier_mapping>
-  <carrier_mapping name="CU">
+    <carrier_mapping name="CU">
     <mcc_mnc
       v1="46001"
       v2="46006"
       v3="46009"
+    />
+  </carrier_mapping>
+    <carrier_mapping name="CBN">
+    <mcc_mnc
+      v1="46015"
     />
   </carrier_mapping>
 </mtk_agps_profiles>

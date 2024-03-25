@@ -1,5 +1,5 @@
 service fuelgauged_nvram /vendor/bin/fuelgauged_nvram
-    #class main
+	#class main
     user system
     group system
     oneshot

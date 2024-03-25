@@ -5,7 +5,7 @@
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
-      <Param name="voice_command" value="keyword03"/>
+      <Param name="voice_command" value="none"/>
       <Param name="voice_command_2nd" value="none"/>
       <Param name="voice_command_3rd" value="none"/>
     </ParamUnit>

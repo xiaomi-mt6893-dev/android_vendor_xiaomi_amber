@@ -3,4 +3,3 @@ service beanpod_check_keybox_service /vendor/bin/bp_kmsetkey_ca -c
     user system
     group system
     oneshot
-	disabled

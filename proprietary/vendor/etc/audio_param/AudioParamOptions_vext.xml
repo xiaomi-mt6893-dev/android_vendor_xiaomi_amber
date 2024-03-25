@@ -38,7 +38,7 @@
  <Param name="MTK_AUDIO_TUNNELING_SUPPORT" value="" />
  <Param name="MTK_SMARTPA_DUMMY_LIB" value="" />
  <Param name="MTK_HIFIAUDIO_SUPPORT" value="yes" />
- <Param name="MTK_BESLOUDNESS_SUPPORT" value="" />
+ <Param name="MTK_BESLOUDNESS_SUPPORT" value="no" />
  <Param name="MTK_USB_PHONECALL" value="" />
  <Param name="MTK_AUDIO_NUMBER_OF_SPEAKER" value="2" />
  <Param name="MTK_A2DP_OFFLOAD_SUPPORT" value="yes" />
@@ -49,13 +49,14 @@
  <Param name="MTK_AUDIODSP_SUPPORT" value="yes" />
  <Param name="MTK_INCALL_HANDSFREE_DMNR" value="no" />
  <Param name="MTK_VOW_SUPPORT" value="yes" />
- <Param name="MTK_VOW_AMAZON_SUPPORT" value="yes" />
+ <Param name="MTK_VOW_AMAZON_SUPPORT" value="no" />
  <Param name="MTK_VOW_GVA_SUPPORT" value="yes" />
  <Param name="MTK_VOW_DUAL_MIC_SUPPORT" value="yes" />
  <Param name="MTK_VOW_MAX_PDK_NUMBER" value="0" />
  <Param name="MTK_VOW_MULTI_KEYPHRASE_SUPPORT" value="" />
  <Param name="MTK_VOW_SINGLE_MIC_SELECT" value="" />
  <Param name="MTK_VOW_RECORD_CONCURRENT" value="" />
+ <Param name="MTK_VOW_NORMAL_RECORD_ENROLL" value="" />
  <Param name="MTK_PHONE_CALL_FIXED_48K_SAMPLERATE" value="yes" />
  <Param name="VIR_WIFI_ONLY_SUPPORT" value="no" />
  <Param name="VIR_3G_DATA_ONLY_SUPPORT" value="no" />
