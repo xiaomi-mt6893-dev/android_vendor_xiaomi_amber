@@ -512,6 +512,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib/mt6893/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6893/libmtk_drvb.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/mt6893/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6893/libnir_neon_driver.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/mt6893/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6893/libpq_prot.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/rfsa/adsp/libSuperSensor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSuperSensor_skel.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswgamedap.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswvqe.so \
