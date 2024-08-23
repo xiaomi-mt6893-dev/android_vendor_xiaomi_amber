@@ -160,3 +160,220 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+install_symlink {
+	name: "libGLES_mali_libGLES_mali_symlink32",
+	soc_specific: true,
+	installed_location: "lib/egl/libGLES_mali.so",
+	symlink_target: "/vendor/lib/egl/mt6893/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "android.hardware.graphics.allocator@4.0-impl-mediatek_android.hardware.graphics.allocator@4.0-impl-mediatek_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
+	symlink_target: "/vendor/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+	symlink_target: "/vendor/lib/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "vulkan.mali_vulkan.mali_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/vulkan.mali.so",
+	symlink_target: "/vendor/lib/hw/mt6893/vulkan.mali.so",
+}
+
+install_symlink {
+	name: "arm.graphics-V1-ndk_platform_arm.graphics-V1-ndk_platform_symlink32",
+	soc_specific: true,
+	installed_location: "lib/arm.graphics-V1-ndk_platform.so",
+	symlink_target: "/vendor/lib/mt6893/arm.graphics-V1-ndk_platform.so",
+}
+
+install_symlink {
+	name: "arm.graphics-ndk_platform_arm.graphics-ndk_platform_symlink32",
+	soc_specific: true,
+	installed_location: "lib/arm.graphics-ndk_platform.so",
+	symlink_target: "/vendor/lib/mt6893/arm.graphics-ndk_platform.so",
+}
+
+install_symlink {
+	name: "libaiselector_libaiselector_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libaiselector.so",
+	symlink_target: "/vendor/lib/mt6893/libaiselector.so",
+}
+
+install_symlink {
+	name: "libdpframework_libdpframework_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libdpframework.so",
+	symlink_target: "/vendor/lib/mt6893/libdpframework.so",
+}
+
+install_symlink {
+	name: "libgpudataproducer_libgpudataproducer_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libgpudataproducer.so",
+	symlink_target: "/vendor/lib/mt6893/libgpudataproducer.so",
+}
+
+install_symlink {
+	name: "libmtk_drvb_libmtk_drvb_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtk_drvb.so",
+	symlink_target: "/vendor/lib/mt6893/libmtk_drvb.so",
+}
+
+install_symlink {
+	name: "libnir_neon_driver_libnir_neon_driver_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libnir_neon_driver.so",
+	symlink_target: "/vendor/lib/mt6893/libnir_neon_driver.so",
+}
+
+install_symlink {
+	name: "libpq_prot_libpq_prot_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libpq_prot.so",
+	symlink_target: "/vendor/lib/mt6893/libpq_prot.so",
+}
+
+install_symlink {
+	name: "libGLES_mali_libGLES_mali_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/egl/libGLES_mali.so",
+	symlink_target: "/vendor/lib64/egl/mt6893/libGLES_mali.so",
+}
+
+install_symlink {
+	name: "android.hardware.graphics.allocator@4.0-impl-mediatek_android.hardware.graphics.allocator@4.0-impl-mediatek_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
+	symlink_target: "/vendor/lib64/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+	symlink_target: "/vendor/lib64/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "vulkan.mali_vulkan.mali_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vulkan.mali.so",
+	symlink_target: "/vendor/lib64/hw/mt6893/vulkan.mali.so",
+}
+
+install_symlink {
+	name: "arm.graphics-V1-ndk_platform_arm.graphics-V1-ndk_platform_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/arm.graphics-V1-ndk_platform.so",
+	symlink_target: "/vendor/lib64/mt6893/arm.graphics-V1-ndk_platform.so",
+}
+
+install_symlink {
+	name: "arm.graphics-ndk_platform_arm.graphics-ndk_platform_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/arm.graphics-ndk_platform.so",
+	symlink_target: "/vendor/lib64/mt6893/arm.graphics-ndk_platform.so",
+}
+
+install_symlink {
+	name: "libDR_libDR_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libDR.so",
+	symlink_target: "/vendor/lib64/mt6893/libDR.so",
+}
+
+install_symlink {
+	name: "libaiselector_libaiselector_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiselector.so",
+	symlink_target: "/vendor/lib64/mt6893/libaiselector.so",
+}
+
+install_symlink {
+	name: "libdpframework_libdpframework_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libdpframework.so",
+	symlink_target: "/vendor/lib64/mt6893/libdpframework.so",
+}
+
+install_symlink {
+	name: "libgpudataproducer_libgpudataproducer_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libgpudataproducer.so",
+	symlink_target: "/vendor/lib64/mt6893/libgpudataproducer.so",
+}
+
+install_symlink {
+	name: "libmcv_runtime.mtk_libmcv_runtime.mtk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmcv_runtime.mtk.so",
+	symlink_target: "/vendor/lib64/mt6893/libmcv_runtime.mtk.so",
+}
+
+install_symlink {
+	name: "libmdla_ut_libmdla_ut_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmdla_ut.so",
+	symlink_target: "/vendor/lib64/mt6893/libmdla_ut.so",
+}
+
+install_symlink {
+	name: "libmnl_libmnl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmnl.so",
+	symlink_target: "/vendor/lib64/mt6893/libmnl.so",
+}
+
+install_symlink {
+	name: "libmtk_drvb_libmtk_drvb_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtk_drvb.so",
+	symlink_target: "/vendor/lib64/mt6893/libmtk_drvb.so",
+}
+
+install_symlink {
+	name: "libneuron_platform.vpu_libneuron_platform.vpu_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libneuron_platform.vpu.so",
+	symlink_target: "/vendor/lib64/mt6893/libneuron_platform.vpu.so",
+}
+
+install_symlink {
+	name: "libneuron_runtime.5_libneuron_runtime.5_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libneuron_runtime.5.so",
+	symlink_target: "/vendor/lib64/mt6893/libneuron_runtime.5.so",
+}
+
+install_symlink {
+	name: "libneuron_runtime_libneuron_runtime_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libneuron_runtime.so",
+	symlink_target: "/vendor/lib64/mt6893/libneuron_runtime.so",
+}
+
+install_symlink {
+	name: "libnir_neon_driver_libnir_neon_driver_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libnir_neon_driver.so",
+	symlink_target: "/vendor/lib64/mt6893/libnir_neon_driver.so",
+}
+
+install_symlink {
+	name: "libpq_prot_libpq_prot_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libpq_prot.so",
+	symlink_target: "/vendor/lib64/mt6893/libpq_prot.so",
+}
+

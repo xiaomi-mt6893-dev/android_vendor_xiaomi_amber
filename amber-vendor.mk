@@ -1377,3 +1377,36 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_media_c2_V1_1_default \
     manifest_vendor.dolby.hardware.dms
+
+PRODUCT_PACKAGES += \
+    libGLES_mali_libGLES_mali_symlink32 \
+    android.hardware.graphics.allocator@4.0-impl-mediatek_android.hardware.graphics.allocator@4.0-impl-mediatek_symlink32 \
+    android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink32 \
+    vulkan.mali_vulkan.mali_symlink32 \
+    arm.graphics-V1-ndk_platform_arm.graphics-V1-ndk_platform_symlink32 \
+    arm.graphics-ndk_platform_arm.graphics-ndk_platform_symlink32 \
+    libaiselector_libaiselector_symlink32 \
+    libdpframework_libdpframework_symlink32 \
+    libgpudataproducer_libgpudataproducer_symlink32 \
+    libmtk_drvb_libmtk_drvb_symlink32 \
+    libnir_neon_driver_libnir_neon_driver_symlink32 \
+    libpq_prot_libpq_prot_symlink32 \
+    libGLES_mali_libGLES_mali_symlink64 \
+    android.hardware.graphics.allocator@4.0-impl-mediatek_android.hardware.graphics.allocator@4.0-impl-mediatek_symlink64 \
+    android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink64 \
+    vulkan.mali_vulkan.mali_symlink64 \
+    arm.graphics-V1-ndk_platform_arm.graphics-V1-ndk_platform_symlink64 \
+    arm.graphics-ndk_platform_arm.graphics-ndk_platform_symlink64 \
+    libDR_libDR_symlink64 \
+    libaiselector_libaiselector_symlink64 \
+    libdpframework_libdpframework_symlink64 \
+    libgpudataproducer_libgpudataproducer_symlink64 \
+    libmcv_runtime.mtk_libmcv_runtime.mtk_symlink64 \
+    libmdla_ut_libmdla_ut_symlink64 \
+    libmnl_libmnl_symlink64 \
+    libmtk_drvb_libmtk_drvb_symlink64 \
+    libneuron_platform.vpu_libneuron_platform.vpu_symlink64 \
+    libneuron_runtime.5_libneuron_runtime.5_symlink64 \
+    libneuron_runtime_libneuron_runtime_symlink64 \
+    libnir_neon_driver_libnir_neon_driver_symlink64 \
+    libpq_prot_libpq_prot_symlink64
