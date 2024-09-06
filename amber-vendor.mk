@@ -287,17 +287,23 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/init.conninfra.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.conninfra.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
@@ -369,6 +375,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/firmware/novatek_ts_fw_144.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw_144.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/novatek_ts_fw_jdi.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw_jdi.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/novatek_ts_fw_tm.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw_tm.bin \
+    vendor/xiaomi/amber/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_patch_wmmcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_patch_wmmcu_1a_1_hdr.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_bt_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_bt_1_1_hdr.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_bt_1a_1_hdr.bin \
@@ -405,6 +412,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libMtkOmxAdpcmDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAdpcmDec.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libMtkOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAlacDec.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libMtkOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxApeDec.so \
@@ -467,15 +475,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_gp_client.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_uree.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libh264dec_customize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_customize.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libh264dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sa.ca7.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libh264dec_sd.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sd.ca7.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libh264dec_se.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_se.ca7.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrvideo.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimsg_log.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp3dec_mtk.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libmp4enc_xa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_xa.ca7.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
-    vendor/xiaomi/amber/proprietary/vendor/lib/libmtcloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtcloader.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkperf_client_vendor.so \
@@ -513,6 +528,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib/libvow_ap_test_ha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvow_ap_test_ha.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libvow_ap_test_hh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvow_ap_test_hh.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libvow_ap_test_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvow_ap_test_nn.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libvp8dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp8dec_sa.ca7.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libvp8enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp8enc_sa.ca7.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib/libvp9dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp9dec_sa.ca7.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu5.so \
     vendor/xiaomi/amber/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
@@ -917,6 +935,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaalservice.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadpcmdec_mtk.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_moon.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libaiawb_moon_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_moon_model.so \
@@ -1026,6 +1045,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_c2store.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_vdec.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_venc.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_alacdec.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_soft_mtk_apedec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_apedec.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_imaadpcmdec.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_mp3dec.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_msadpcmdec.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_qt_plugin.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_rs_plugin.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libcom.xiaomi.pluginutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.pluginutils.so \
@@ -1103,6 +1127,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
+    vendor/xiaomi/amber/proprietary/vendor/lib64/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmp3dec_mtk.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsnr.so \
     vendor/xiaomi/amber/proprietary/vendor/lib64/libmt_isee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt_isee.so \
