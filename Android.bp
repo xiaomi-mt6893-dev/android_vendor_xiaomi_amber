@@ -8,17 +8,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "ImsService",
-	owner: "xiaomi",
-	apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleRISCV",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
@@ -40,6 +29,18 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+android_app_import {
+	name: "ImsService",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -98,7 +99,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu",
+	name: "android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml",
 	filename_from_src: true,
@@ -107,7 +108,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "fod",
+	name: "fod.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/fod.xml",
 	filename_from_src: true,
@@ -116,7 +117,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "gnss-mtk",
+	name: "gnss-mtk.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk.xml",
 	filename_from_src: true,
@@ -125,7 +126,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "gnss@2.1-service",
+	name: "gnss@2.1-service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-service.xml",
 	filename_from_src: true,
@@ -134,7 +135,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.4-service.widevine",
+	name: "manifest_android.hardware.drm@1.4-service.widevine.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
 	filename_from_src: true,
@@ -143,7 +144,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_media_c2_V1_1_default",
+	name: "manifest_media_c2_V1_1_default.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml",
 	filename_from_src: true,
@@ -152,7 +153,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_vendor.dolby.hardware.dms",
+	name: "manifest_vendor.dolby.hardware.dms.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
 	filename_from_src: true,
@@ -160,67 +161,37 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-install_symlink {
-	name: "libGLES_mali_libGLES_mali_symlink32",
-	soc_specific: true,
-	installed_location: "lib/egl/libGLES_mali.so",
-	symlink_target: "/vendor/lib/egl/mt6893/libGLES_mali.so",
+prebuilt_etc {
+	name: "init.vtservice",
+	owner: "xiaomi",
+	src: "proprietary/system_ext/etc/init/init.vtservice.rc",
+	filename_from_src: true,
+	sub_dir: "init",
+	system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vtservice",
+	owner: "xiaomi",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/bin/vtservice"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	system_ext_specific: true,
 }
 
 install_symlink {
-	name: "android.hardware.graphics.allocator@4.0-impl-mediatek_android.hardware.graphics.allocator@4.0-impl-mediatek_symlink32",
+	name: "android.hardware.media.c2@1_android.hardware.media.c2@1_symlink",
 	soc_specific: true,
-	installed_location: "lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
-	symlink_target: "/vendor/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
-}
-
-install_symlink {
-	name: "android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink32",
-	soc_specific: true,
-	installed_location: "lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
-	symlink_target: "/vendor/lib/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
-}
-
-install_symlink {
-	name: "vulkan.mali_vulkan.mali_symlink32",
-	soc_specific: true,
-	installed_location: "lib/hw/vulkan.mali.so",
-	symlink_target: "/vendor/lib/hw/mt6893/vulkan.mali.so",
-}
-
-install_symlink {
-	name: "arm.graphics-V1-ndk_platform_arm.graphics-V1-ndk_platform_symlink32",
-	soc_specific: true,
-	installed_location: "lib/arm.graphics-V1-ndk_platform.so",
-	symlink_target: "/vendor/lib/mt6893/arm.graphics-V1-ndk_platform.so",
-}
-
-install_symlink {
-	name: "arm.graphics-ndk_platform_arm.graphics-ndk_platform_symlink32",
-	soc_specific: true,
-	installed_location: "lib/arm.graphics-ndk_platform.so",
-	symlink_target: "/vendor/lib/mt6893/arm.graphics-ndk_platform.so",
-}
-
-install_symlink {
-	name: "libaiselector_libaiselector_symlink32",
-	soc_specific: true,
-	installed_location: "lib/libaiselector.so",
-	symlink_target: "/vendor/lib/mt6893/libaiselector.so",
-}
-
-install_symlink {
-	name: "libdpframework_libdpframework_symlink32",
-	soc_specific: true,
-	installed_location: "lib/libdpframework.so",
-	symlink_target: "/vendor/lib/mt6893/libdpframework.so",
-}
-
-install_symlink {
-	name: "libgpudataproducer_libgpudataproducer_symlink32",
-	soc_specific: true,
-	installed_location: "lib/libgpudataproducer.so",
-	symlink_target: "/vendor/lib/mt6893/libgpudataproducer.so",
+	installed_location: "bin/hw/android.hardware.media.c2@1.2-mediatek",
+	symlink_target: "/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
 }
 
 install_symlink {
@@ -228,20 +199,6 @@ install_symlink {
 	soc_specific: true,
 	installed_location: "lib/libmtk_drvb.so",
 	symlink_target: "/vendor/lib/mt6893/libmtk_drvb.so",
-}
-
-install_symlink {
-	name: "libnir_neon_driver_libnir_neon_driver_symlink32",
-	soc_specific: true,
-	installed_location: "lib/libnir_neon_driver.so",
-	symlink_target: "/vendor/lib/mt6893/libnir_neon_driver.so",
-}
-
-install_symlink {
-	name: "libpq_prot_libpq_prot_symlink32",
-	soc_specific: true,
-	installed_location: "lib/libpq_prot.so",
-	symlink_target: "/vendor/lib/mt6893/libpq_prot.so",
 }
 
 install_symlink {
