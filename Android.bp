@@ -25559,10 +25559,31 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/system_ext/lib64/libimsma.so",
             ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "libgui",
+                "libmedia",
+                "libstagefright",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "libsink-mtk",
+                "libsource",
+                "libvcodec_cap",
+                "libimsma_rtp",
+                "libcomutils",
+                "liblog",
+                "libsignal",
+                "libnetd_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     system_ext_specific: true,
 }
@@ -25774,7 +25795,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsink",
+    name: "libsink-mtk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -25782,10 +25803,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libsink.so",
+                "proprietary/system_ext/lib64/libsink-mtk.so",
             ],
             shared_libs: [
-                "libshim_sink",
+                "libaudioclient_shim",
                 "libbinder",
                 "libcutils",
                 "libgui",
