@@ -4644,6 +4644,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/hwcomposer.mt6893.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libutils",
                 "libcutils",
                 "liblog",
