@@ -218,7 +218,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
-    vendor/xiaomi/amber/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -842,8 +841,6 @@ PRODUCT_PACKAGES += \
     libbeauty_face_interface \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
     libbt-vendor \
     libc++_shared \
     libcam.ArcCamEngine \
@@ -1161,10 +1158,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
-    vendor.mediatek.hardware.engineermode@1.0 \
-    vendor.mediatek.hardware.engineermode@1.1 \
-    vendor.mediatek.hardware.engineermode@1.2 \
-    vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -1201,7 +1194,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
     wechat.beanpod \
     libcomutils \
-    libem_support_jni \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
@@ -1219,7 +1211,6 @@ PRODUCT_PACKAGES += \
     SoterService \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
-    EngineerMode \
     ImsService \
     mediatek-common \
     mediatek-framework \
@@ -1243,7 +1234,6 @@ PRODUCT_PACKAGES += \
     ccci_rpcd \
     chipinfo \
     conninfra_loader \
-    em_hidl \
     fidoca_isee \
     fuelgauged \
     fuelgauged_nvram \

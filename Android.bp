@@ -13820,58 +13820,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbluetooth_relayer",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_relayer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbluetoothem_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetoothem_mtk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetoothem_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbt-vendor",
     owner: "xiaomi",
     strip: {
@@ -24237,124 +24185,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "vendor.mediatek.hardware.engineermode@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.3",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "vendor.mediatek.hardware.engineermode@1.1",
-                "vendor.mediatek.hardware.engineermode@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mmagent@1.0",
     owner: "xiaomi",
     strip: {
@@ -25525,34 +25355,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libem_support_jni",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libem_support_jni.so",
-            ],
-            shared_libs: [
-                "libandroid_runtime",
-                "liblog",
-                "libutils",
-                "libgui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libimsma",
     owner: "xiaomi",
     strip: {
@@ -26057,17 +25859,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "EngineerMode",
-    owner: "xiaomi",
-    apk: "proprietary/system_ext/app/EngineerMode/EngineerMode.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
-
-android_app_import {
     name: "ImsService",
     owner: "xiaomi",
     apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
@@ -26354,44 +26145,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "em_hidl",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/em_hidl",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libhardware",
-                "libbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libcutils",
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "vendor.mediatek.hardware.engineermode@1.1",
-                "vendor.mediatek.hardware.engineermode@1.2",
-                "vendor.mediatek.hardware.engineermode@1.3",
-                "libbluetooth_relayer",
-                "libbluetoothem_mtk",
                 "libc++",
                 "libc",
                 "libm",
