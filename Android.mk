@@ -21,6 +21,6 @@ $(call add-radio-file-sha1-checked,radio/preloader_raw.img,3cb5e8e6e69ee88ec4bb1
 $(call add-radio-file-sha1-checked,radio/scp.img,28ed494d1d760a781834e46b0950646260b72b46)
 $(call add-radio-file-sha1-checked,radio/spmfw.img,8fa148128cca7dffef96e0dde70712ff13631755)
 $(call add-radio-file-sha1-checked,radio/sspm.img,4305d596a0cdf652cdca26242d020f31ef144210)
-$(call add-radio-file-sha1-checked,radio/tee.img,1c0ee9524317f93a3e8b655b38480f1b7423e032)
+$(call add-radio-file-sha1-checked,radio/tee.img,997e97755a9dc72cf23786e110cacdf48bfb0be2)
 
 endif
