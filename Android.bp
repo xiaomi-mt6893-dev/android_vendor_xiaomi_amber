@@ -125,7 +125,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libbase",
                 "libunwindstack",
-                "libselinux",
                 "liblog",
                 "libz",
                 "libc",
@@ -142,7 +141,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libbase",
                 "libunwindstack",
-                "libselinux",
                 "liblog",
                 "libz",
                 "libc",
@@ -1889,7 +1887,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libgz_uree",
                 "libgz_gp_client",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -1920,7 +1917,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libgz_uree",
                 "libgz_gp_client",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -1951,7 +1947,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libgz_uree",
                 "libgz_gp_client",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -2767,6 +2762,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libvcodec_oal",
+                "libvcodec_utility",
                 "libc++",
                 "libdl",
                 "libc",
@@ -2792,8 +2788,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libhevce_sb.ca7.android.so",
             ],
             shared_libs: [
+                "libcutils",
                 "liblog",
                 "libvcodec_oal",
+                "libvcodec_utility",
                 "libc",
                 "libm",
             ],
@@ -2819,7 +2817,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libvcodec_utility",
                 "libvcodec_oal",
                 "libc++",
                 "libdl",
@@ -3573,7 +3570,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/APUWareXrpServer_v2.so",
             ],
             shared_libs: [
-                "libapu_mdw",
                 "libion",
                 "liblog",
                 "libhidlbase",
@@ -4687,9 +4683,6 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.9",
                 "vendor.mediatek.hardware.pq@2.10",
                 "vendor.mediatek.hardware.pq@2.11",
-                "vendor.mediatek.hardware.pq@2.12",
-                "vendor.mediatek.hardware.pq@2.13",
-                "vendor.mediatek.hardware.pq@2.14",
                 "libc++",
                 "libc",
                 "libm",
@@ -5194,7 +5187,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.15-impl",
+    name: "vendor.mediatek.hardware.pq@2.13-impl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -5202,16 +5195,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so",
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so",
             ],
             shared_libs: [
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "libhardware",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@1.0-convert-shared",
                 "liblog",
                 "libutils-v32",
                 "libcutils",
@@ -5232,16 +5221,11 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.11",
                 "vendor.mediatek.hardware.pq@2.12",
                 "vendor.mediatek.hardware.pq@2.13",
-                "vendor.mediatek.hardware.pq@2.14",
-                "vendor.mediatek.hardware.pq@2.15",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
-                "vendor.mediatek.hardware.mmagent@1.0",
-                "vendor.mediatek.hardware.mmagent@1.1",
                 "libdrm",
                 "libmml",
                 "libpqframework",
-                "libdmabufheap",
                 "libsync",
                 "libaalservice",
                 "libc++",
@@ -5367,10 +5351,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib3a.ae.so",
             ],
             shared_libs: [
-                "libdl",
-                "liblog",
                 "libSQLiteModule_VER_ALL",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -5500,10 +5483,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib3a.af.core.so",
             ],
             shared_libs: [
-                "libdl",
-                "liblog",
                 "libSQLiteModule_VER_ALL",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -5595,10 +5577,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib3a.awb.core.so",
             ],
             shared_libs: [
-                "libdl",
-                "liblog",
                 "libSQLiteModule_VER_ALL",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -5620,7 +5601,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib3a.ccudrv.so",
             ],
             shared_libs: [
-                "libdmabufheap",
                 "lib3a.af.core",
                 "liblog",
                 "libcutils",
@@ -5751,9 +5731,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libdl",
                 "libSQLiteModule_VER_ALL",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -5775,9 +5755,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib3a.flicker.so",
             ],
             shared_libs: [
-                "libdl",
-                "liblog",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -12345,9 +12324,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so",
             ],
             shared_libs: [
-                "libdl",
                 "liblog",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -12749,8 +12728,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libdl",
                 "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -13247,6 +13226,34 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalacdec_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libalacdec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -15506,11 +15513,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcamalgo.n3d.so",
             ],
             shared_libs: [
+                "libmtk_drvb",
                 "libc++",
+                "liblog",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv3",
-                "libcamalgo.platform",
                 "libc",
                 "libm",
                 "libdl",
@@ -15619,7 +15627,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libcamalgo.platform",
                 "libc++",
                 "libc",
                 "libm",
@@ -16141,7 +16148,6 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
-                "libged",
                 "libcodec2_soft_common",
                 "libcutils",
                 "liblog",
@@ -16190,7 +16196,6 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
-                "libged",
                 "libcodec2_soft_common",
                 "libcutils",
                 "liblog",
@@ -16237,6 +16242,8 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcodec2",
                 "libcodec2_mtk_c2store",
+                "libalacdec_mtk",
+                "libmtk_drvb",
                 "libc++",
                 "libc",
                 "libm",
@@ -16270,6 +16277,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcodec2",
                 "libcodec2_mtk_c2store",
+                "libaudioutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -16495,7 +16503,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libhidlbase",
                 "libutils",
-                "libcutils",
                 "vendor.mediatek.hardware.composer_ext@1.0",
                 "libc++",
                 "libc",
@@ -17823,7 +17830,6 @@ cc_prebuilt_library_shared {
                 "libion",
                 "libion_mtk",
                 "libcutils",
-                "libdmabufheap",
                 "libgz_uree",
                 "libc++",
                 "libc",
@@ -18386,7 +18392,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libdmabufheap",
                 "libneuron_runtime.5",
                 "libc++",
                 "libc",
@@ -18412,9 +18417,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmml.so",
             ],
             shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -18580,7 +18582,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmt_isee@1.3",
+    name: "libmt_isee@1.2",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -18588,13 +18590,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmt_isee@1.3.so",
+                "proprietary/vendor/lib64/libmt_isee@1.2.so",
             ],
             shared_libs: [
                 "vendor.xiaomi.hardware.mtdservice@1.0",
                 "vendor.xiaomi.hardware.mtdservice@1.1",
                 "vendor.xiaomi.hardware.mtdservice@1.2",
-                "vendor.xiaomi.hardware.mtdservice@1.3",
                 "libcrypto",
                 "liblog",
                 "libutils",
@@ -20672,7 +20673,6 @@ cc_prebuilt_library_shared {
                 "libmtkcam_prerelease",
                 "libmtkcam_scenariorecorder",
                 "libaedv",
-                "libmtkcam.atmseventmgr",
                 "libmtkcam_pipelinemodel_zsl",
                 "libmtkcam_pipelinemodel_capture",
                 "libhidlbase",
@@ -21924,7 +21924,6 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
                 "libpower_timer",
-                "libged",
                 "libfmq",
                 "libbase",
                 "libaedv",
@@ -22042,33 +22041,9 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libgralloc_extra",
                 "libhidlmemory",
-                "vendor.mediatek.hardware.pq@2.15",
+                "vendor.mediatek.hardware.pq@2.13",
                 "libmml",
                 "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpqpconfig",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpqpconfig.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -23639,7 +23614,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -23925,34 +23899,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.mediatek.hardware.camera.bgservice@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.ccap@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so",
-            ],
-            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -24776,91 +24722,6 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.10",
                 "vendor.mediatek.hardware.pq@2.11",
                 "vendor.mediatek.hardware.pq@2.12",
-                "vendor.mediatek.hardware.pq@2.2",
-                "vendor.mediatek.hardware.pq@2.3",
-                "vendor.mediatek.hardware.pq@2.4",
-                "vendor.mediatek.hardware.pq@2.5",
-                "vendor.mediatek.hardware.pq@2.6",
-                "vendor.mediatek.hardware.pq@2.7",
-                "vendor.mediatek.hardware.pq@2.8",
-                "vendor.mediatek.hardware.pq@2.9",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.14",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.14.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0",
-                "vendor.mediatek.hardware.pq@2.1",
-                "vendor.mediatek.hardware.pq@2.10",
-                "vendor.mediatek.hardware.pq@2.11",
-                "vendor.mediatek.hardware.pq@2.12",
-                "vendor.mediatek.hardware.pq@2.13",
-                "vendor.mediatek.hardware.pq@2.2",
-                "vendor.mediatek.hardware.pq@2.3",
-                "vendor.mediatek.hardware.pq@2.4",
-                "vendor.mediatek.hardware.pq@2.5",
-                "vendor.mediatek.hardware.pq@2.6",
-                "vendor.mediatek.hardware.pq@2.7",
-                "vendor.mediatek.hardware.pq@2.8",
-                "vendor.mediatek.hardware.pq@2.9",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.15",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.15.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0",
-                "vendor.mediatek.hardware.pq@2.1",
-                "vendor.mediatek.hardware.pq@2.10",
-                "vendor.mediatek.hardware.pq@2.11",
-                "vendor.mediatek.hardware.pq@2.12",
-                "vendor.mediatek.hardware.pq@2.13",
-                "vendor.mediatek.hardware.pq@2.14",
                 "vendor.mediatek.hardware.pq@2.2",
                 "vendor.mediatek.hardware.pq@2.3",
                 "vendor.mediatek.hardware.pq@2.4",
@@ -26748,7 +26609,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "libgralloc_extra",
                 "vendor.mediatek.hardware.mmagent@1.0",
                 "vendor.mediatek.hardware.mmagent@1.1",
                 "libc++",
@@ -26884,7 +26744,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libhardware",
-                "vendor.mediatek.hardware.pq@2.15",
+                "vendor.mediatek.hardware.pq@2.13",
                 "libc++",
                 "libc",
                 "libm",
@@ -27167,18 +27027,17 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "mtd_isee@1.3",
+    name: "mtd_isee@1.2",
     owner: "xiaomi",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/mtd_isee@1.3",
+                "proprietary/vendor/bin/mtd_isee@1.2",
             ],
             shared_libs: [
                 "vendor.xiaomi.hardware.mtdservice@1.0",
                 "vendor.xiaomi.hardware.mtdservice@1.1",
                 "vendor.xiaomi.hardware.mtdservice@1.2",
-                "vendor.xiaomi.hardware.mtdservice@1.3",
                 "libcrypto",
                 "liblog",
                 "libutils",
@@ -27188,7 +27047,7 @@ cc_prebuilt_binary {
                 "vendor.xiaomi.hardware.mlipay@1.1",
                 "vendor.xiaomi.hardware.mfidoca@1.0",
                 "libTEECommon",
-                "libmt_isee@1.3",
+                "libmt_isee@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -27364,7 +27223,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libifcutils_mtk",
                 "libmipc",
-                "libmtkproperty",
                 "libc++",
                 "libc",
                 "libm",

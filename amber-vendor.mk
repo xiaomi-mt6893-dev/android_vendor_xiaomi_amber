@@ -253,13 +253,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc \
-    vendor/xiaomi/amber/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc \
+    vendor/xiaomi/amber/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-iseeservice.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/mdss_dsi_k11t_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_k11t_42_02_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/amber/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/amber/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/amber/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
+    vendor/xiaomi/amber/proprietary/vendor/etc/st21nfc_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf.txt \
     vendor/xiaomi/amber/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
     vendor/xiaomi/amber/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
     vendor/xiaomi/amber/proprietary/vendor/etc/thermal-k11r-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-k11r-camera.conf \
@@ -318,6 +319,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_e1_hdr.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_wifi_1a_1_hdr.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin \
+    vendor/xiaomi/amber/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
     vendor/xiaomi/amber/proprietary/vendor/firmware/st_fts_k11st.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k11st.ftb \
     vendor/xiaomi/amber/proprietary/vendor/firmware/st_fts_k11st_htp.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k11st_htp.ftb \
@@ -493,7 +495,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
-    vendor.mediatek.hardware.pq@2.15-impl \
+    vendor.mediatek.hardware.pq@2.13-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
     lib3a.ae.core \
@@ -817,6 +819,7 @@ PRODUCT_PACKAGES += \
     libaispq \
     libalCFR \
     libalLDC \
+    libalacdec_mtk \
     libalhLDC \
     libanc_calibration_parser \
     libanc_dc_base \
@@ -984,7 +987,7 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libmsnr \
     libmt_isee \
-    libmt_isee@1.3 \
+    libmt_isee@1.2 \
     libmtcloader \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -1082,7 +1085,6 @@ PRODUCT_PACKAGES += \
     libpq_cust_base \
     libpqframework \
     libpqparamparser \
-    libpqpconfig \
     libratconfig \
     librilfusion \
     librpc \
@@ -1148,7 +1150,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
-    vendor.mediatek.hardware.camera.ccap@1.0 \
     vendor.mediatek.hardware.camera.device@3.7 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
     vendor.mediatek.hardware.camera.isphal@1.0 \
@@ -1175,8 +1176,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.11 \
     vendor.mediatek.hardware.pq@2.12 \
     vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.14 \
-    vendor.mediatek.hardware.pq@2.15 \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.pq@2.4 \
@@ -1263,7 +1262,7 @@ PRODUCT_PACKAGES += \
     mi_thermald \
     mlipayd_isee@1.1 \
     mnld \
-    mtd_isee@1.3 \
+    mtd_isee@1.2 \
     mtk_agpsd \
     netdagent \
     nvram_daemon \

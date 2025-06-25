@@ -13,6 +13,7 @@ AB_OTA_PARTITIONS += \
     logo \
     mcupm \
     md1img \
+    mitee \
     pi_img \
     preloader_raw \
     scp \
