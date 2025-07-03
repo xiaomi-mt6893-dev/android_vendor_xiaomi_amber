@@ -16646,7 +16646,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "liblog",
                 "libxml2",
                 "libdapparamstorage",
@@ -26572,6 +26572,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service",
             ],
             shared_libs: [
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libutils",
                 "libhidlbase",
