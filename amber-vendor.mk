@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libladder \
+    libmtcloader \
     libmtkcutils \
     libmtkproperty \
     libmtkrillog \
@@ -982,7 +983,6 @@ PRODUCT_PACKAGES += \
     libmsnr \
     libmt_isee \
     libmt_isee@1.2 \
-    libmtcloader \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkares \
