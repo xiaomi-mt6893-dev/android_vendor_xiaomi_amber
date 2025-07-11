@@ -2629,34 +2629,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfgauge_gm30",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libfgauge_gm30.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libfvaudio",
     owner: "xiaomi",
     strip: {
@@ -25189,61 +25161,6 @@ cc_prebuilt_binary {
                 "vendor.xiaomi.hardware.mfidoca@1.0",
                 "libTEECommon",
                 "libmfido_isee",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fuelgauged",
-    owner: "xiaomi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/fuelgauged",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fuelgauged_nvram",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/fuelgauged_nvram",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libnvram",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
