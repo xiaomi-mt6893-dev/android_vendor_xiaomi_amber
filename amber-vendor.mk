@@ -348,13 +348,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     libTEECommon \
     libaedv \
     libaiselector_cust \
     libapu_mdw \
     libapusys \
-    libbluetooth_audio_session_mediatek \
     libbwc \
     libcustom_nvram \
     libdapparamstorage \
@@ -386,8 +384,6 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswvqe \
     vendor.dolby.hardware.dms@2.0 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     AV1SecureVdecCA \
@@ -447,6 +443,8 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libvpud_vcodec \
     vendor.mediatek.hardware.audio@7.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
