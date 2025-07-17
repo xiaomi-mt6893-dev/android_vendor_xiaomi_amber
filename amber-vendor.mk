@@ -251,9 +251,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/amber/proprietary/vendor/etc/mdss_dsi_k11t_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_k11t_42_02_0a_dsc_cmd_mi.xml \
-    vendor/xiaomi/amber/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
-    vendor/xiaomi/amber/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
-    vendor/xiaomi/amber/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/amber/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/amber/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/amber/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
@@ -418,8 +415,6 @@ PRODUCT_PACKAGES += \
     libh264dec_sa.ca7 \
     libh264enc_sa.ca7 \
     libhevce_sb.ca7.android \
-    libmisound \
-    libmisoundcrossfade \
     libmp4enc_sa.ca7 \
     libmsbc_mtk \
     libmtklimiter_vendor \
@@ -440,7 +435,6 @@ PRODUCT_PACKAGES += \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
     libvp9dec_sa.ca7 \
-    libvpu5 \
     libvpud_vcodec \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1101,6 +1095,7 @@ PRODUCT_PACKAGES += \
     libvidhance_ldc \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
+    libvpu5 \
     libwa_depth \
     libwa_opticalzoom_fusion \
     libwa_opticalzoomfactor \
