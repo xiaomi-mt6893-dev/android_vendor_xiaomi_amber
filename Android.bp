@@ -1859,6 +1859,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libAVCSecureVencCA",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libAVCSecureVencCA.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libgz_uree",
+                "libgz_gp_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libHEVCdec_sa.ca7.android",
     owner: "xiaomi",
     strip: {

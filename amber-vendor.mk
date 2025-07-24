@@ -389,6 +389,7 @@ PRODUCT_PACKAGES += \
     audio.primary.mt6893 \
     audio.r_submix.mt6893 \
     sound_trigger.primary.default \
+    libAVCSecureVencCA \
     libHEVCdec_sa.ca7.android \
     libMtkSpeechEnh \
     lib_iir \
